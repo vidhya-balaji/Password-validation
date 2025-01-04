@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    background-image: url("./form1.jpg");
+    width: 100%;
+}
+.container{
+    background-color:#202124;
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: relative;
+}
+.header{
+    position: relative;
+    text-align: center;
+}
+.form {
+    margin: 0 auto;
+    max-width: 16rem;
+    overflow: auto;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control input{
+    background-color: transparent;
+    border: 1px solid transparent;
+    color:white;
+    border-bottom-color: white;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.form-control input:focus{
+    border-bottom-color: chartreuse;
+    outline: none;
+}
+.form-control i{
+    position: absolute;
+    top:42px;
+    right: 2px;
+}
+.form button {
+    border-radius: 15px;
+    color: #000;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+.form-control button:focus {
+    outline: 0;
+    border-bottom-color: #777;
+}
+.form-control small{
+    color: #e74c3c;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+.form-control.success input {
+    border-bottom-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-bottom-color: #e74c3c;
+}
+ i.fa-times-circle,i.fa-check-circle {
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.success i.fa-times-circle {
+    visibility: hidden;
+}
+.form-control.error i.fa-times-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control.error i.fa-check-circle {
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
